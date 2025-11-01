@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism in Mumbai</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ab/77/f9/img-20190525-192344-01.jpg?w=1200&h=1200&s=1') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 119, 182, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.attractions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.check{
+    text-align: center;
+}
+
+.card {
+    background: rgba(121, 113, 113, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 50px;
+    margin-right: 30 px;
+    overflow: hidden;
+    height:500px;
+    width: 400px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card p {
+    padding: 0 15px 15px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 119, 182, 0.8);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.total{
+    margin-left: 650px;
+    background-color:#00A2E1;
+}
+.total-bill{
+    margin-left:650px ;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Mumbai With Us</h1>
+        <p style="font-style: oblique;">Your guide to the city of dreams</p>
+        <p style="font-style: oblique;">Famous Places for Visit</p>
+    </header>
+    <main>
+        <section class="attractions">
+            <form id="tourForm">
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/5c/36/13/5c36137e9f48f1d04e4425d3e3df289b.jpg" alt="Gateway of India">
+                <h3>Gateway of India</h3>
+                <p style="font-style: oblique;">Gateway of India is India's most valued structure, which was built in 1924. Read this article to know more about the history, architecture and visiting hours of Gateway of India.</p>
+                <p>Price: ₹2000</p>
+                <div style="text-align: center;">
+                    <input type="checkbox" name="attraction" value="2000" style="accent-color: rgb(122, 243, 122);"> Select
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://image3.mouthshut.com/images/Restaurant/Photo/-78605_10701.jpg" alt="Marine Drive">
+                <h3>Marine Drive</h3>
+                <p style="font-style: oblique;">Known as the Queen's Necklace, this is a beautiful promenade along the coastline.</p>
+                <p>Price: ₹1500</p>
+                <div style="text-align: center;">
+                    <input type="checkbox" name="attraction" value="1500" style="accent-color: rgb(122, 243, 122);"> Select
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://imgcld.yatra.com/ytimages/image/upload/v1461146086/Mumbai-Chhatrapati_Shivaji_Terminus1.jpg" alt="Chhatrapati Shivaji Maharaj Terminus">
+                <h3>Chhatrapati Shivaji Maharaj Terminus</h3>
+                <p style="font-style: oblique;">A UNESCO World Heritage site, it's a stunning example of Victorian Gothic architecture.</p>
+                <p>Price: ₹1000</p>
+                <div style="text-align: center;">
+                    <input type="checkbox" name="attraction" value="1000" style="accent-color: rgb(122, 243, 122);"> Select
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.tripsavvy.com/thmb/tN3d3zQY-Br-LGStoSWXVqCRodU=/950x0/filters:no_upscale():max_bytes(150000):strip_icc()/Mumbai2019-1-34-b97e159b015d4c989fa265b4b3ac7463.JPG" alt="Elephanta Caves">
+                <h3>Elephanta Caves</h3>
+                <p style="font-style: oblique;">Famous for rock-cut sculptures, these caves are located on Elephanta Island.</p>
+                <p>Price: ₹1200</p>
+                <div style="text-align: center;">
+                    <input type="checkbox" name="attraction" value="1200" style="accent-color: rgb(122, 243, 122);"> Select
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://live.staticflickr.com/159/423227213_14c5965fe2_b.jpg" alt="Haji Ali Dargah">
+                <h3>Haji Ali Dargah</h3>
+                <p style="font-style: oblique;">A beautiful mosque located on an islet off the coast of Worli.</p>
+                <p>Price: ₹800</p>
+                <div style="text-align: center;">
+                    <input type="checkbox" name="attraction" value="800" style="accent-color: rgb(122, 243, 122);"> Select
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://1.bp.blogspot.com/-5lmdkALvI1c/XtvRy7H1UAI/AAAAAAAAevw/Ch7_6BnUZc0mZcK6zvn6jvT_IWoXLTfGwCK4BGAsYHg/s1008/2880px-Mumbai_03-2016_46_evening_at_Marine_Drive.jpg" alt="Juhu Beach">
+                <h3>Juhu Beach</h3>
+                <p style="font-style: oblique;">One of the most famous beaches in Mumbai, perfect for relaxation and street food.</p>
+                <p>Price: ₹500</p>
+                <div style="text-align: center;">
+                    <input type="checkbox" name="attraction" value="500" style="accent-color: rgb(122, 243, 122);"> Select
+                </div>
+            </div>
+            <div style="text-align: left; margin-top: 20px;">
+                <button type="button" onclick="calculateTotal()" class="total" style="font-size: 20px; font-weight: 300; padding: 10px 20px;">Calculate Total</button>
+            </div>
+            <div id="totalBill" class="total-bill" style="margin-top: 20px; font-size: 18px; text-align: left;"></div>
+            <div style="text-align: center; margin-top: 18px;">
+                <button type="submit" id="paymentButton" style="display:none; font-size: 22px;font-style: oblique; padding: 13px 26px; background-color: green; color: white;" class="total-bill">
+                    <a href="payment.html" style="text-decoration: none; color: white;">Proceed to Payment</a>
+                </button>
+            </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Explore Mumbai. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function calculateTotal() {
+            const checkboxes = document.querySelectorAll('input[name="attraction"]:checked');
+            let total = 0;
+            checkboxes.forEach((checkbox) => {
+                total += parseFloat(checkbox.value);
+            });
+    
+            const totalBill = document.getElementById('totalBill');
+            totalBill.innerHTML = `Total Bill = ₹${total}`;
+            totalBill.style.display = 'block';
+            totalBill.style.fontSize = '30px';
+            totalBill.style.color = 'black';
+            totalBill.style.fontWeight = 'bold';
+            totalBill.style.marginTop = '30px';
+            totalBill.style.transition = 'all 0.5s ease-in-out';
+            totalBill.style.opacity = '50';
+            setTimeout(() => {
+                totalBill.style.opacity = '1';
+            }, 100);
+    
+            const paymentButton = document.getElementById('paymentButton');
+            paymentButton.style.display = 'block';
+            paymentButton.style.transition = 'all 0.5s ease-in-out';
+            paymentButton.style.opacity = '10';
+            setTimeout(() => {
+                paymentButton.style.opacity = '1';
+            }, 100);
+        }
+    </script>
+</body>
+</html>

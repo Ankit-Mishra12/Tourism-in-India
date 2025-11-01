@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Dashboard</title>
+    <style>
+        /* General Styles */
+body {
+    background-image: url('https://wallpaperset.com/w/full/b/d/8/237905.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo img {
+    height: 90px;
+    border-radius: 50%;
+}
+
+nav button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #ddd;
+}
+
+/* Main Title */
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+}
+
+/* Famous Places Section */
+.famous-places {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.place-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.place-card:hover {
+    transform: scale(1.05);
+}
+
+.place-card img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    padding: 15px;
+}
+.description p{
+    color: #000;
+}
+
+.description h3 {
+    margin: 0 0 10px 0;
+    color: #000;
+}
+
+/* Tourism Assistant */
+.tourism-assistant {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+.help-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content h2 {
+    margin: 10px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.social-media a:hover {
+    color: #007bff;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+.contact-form{
+   display: flex;
+   flex-direction: column-reverse;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+#openForm {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light background for contrast */
+}
+
+#openForm {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#openForm:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+}
+
+.popup-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    width: 400px; /* Wider box */
+    background: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center text */
+}
+
+h2 {
+    color: #007BFF; /* Heading color */
+}
+
+input, textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF; /* Border color on focus */
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: #aaa; /* Close button color */
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #FF6347; /* Red on hover */
+}
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.login{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/OIP.A5aNTMtneplpUmpUXDC9lgHaFm?w=213&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Ansash Logo" ;>
+        </div>
+        <marquee class="marquee" direction="right" scrollamount="25"><h1>WELCOME TO INDIA'S TOURISM</h1></marquee>
+        <nav>
+            <input placeholder="Search Here">
+            <button class="login" onclick="login()"><a href="login.html" style="text-decoration: none; color: white;">Login</button></a>
+            <button class="plan" onclick="plan()"><a href="location.html" style="text-decoration: none; color: black;">Plan a Trip</button></a>
+    
+        </nav>
+    </header>
+
+    <main>
+        <section class="famous-places">
+            <div class="place-card">
+                <img src="https://images3.alphacoders.com/853/thumb-1920-853174.jpg" alt="Taj Mahal">
+                <div class="description">
+                    <h3><a href="agra.html" style="text-decoration: none; color: black;">Taj Mahal(Agra)</a></h3>
+                    <p style="font-style: oblique;">"Located in Agra, this stunning white marble mausoleum was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal. It is a UNESCO World Heritage Site and one of the Seven Wonders of the World..."</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="https://i.pinimg.com/originals/5c/36/13/5c36137e9f48f1d04e4425d3e3df289b.jpg" alt="Gateway of India">
+                <div class="description">
+                    <h3><a href="mumbai.html" style="text-decoration: none; color: black;">Gateway of India(Mumbai)</h3></a>
+                <p style="font-style: oblique;">"Gateway of India is India's most valued structure, which was built in 1924. Read this article to know more about the history, architecture and visiting hours of Gateway of India, a must-visit historical monument..."</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="https://fthmb.tqn.com/FP6jyvdwWsCJg0s-z7oB-3EB8P8=/2124x1413/filters:fill(auto,1)/455239385-56a3bf985f9b58b7d0d3965d.jpg" alt="Varanasi">
+                <div class="description">
+                    <h3>Assi Ghat(Varanasi)</h3>
+                    <p style="font-style: oblique;">"One of the oldest inhabited cities in the world, Varanasi is known for its ghats along the Ganges River and is considered a spiritual capital of India. The evening Ganga Aarti is a must-see..."</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="https://th.bing.com/th/id/OIP.JECjnAV5T5IldizQjS-K4gHaE8?rs=1&pid=ImgDetMain" alt="Kerala Backwaters">
+                <div class="description">
+                    <h3>Kerala Backwaters(Kerala)</h3>
+                    <p style="font-style: oblique;">"A network of lagoons and lakes, the backwaters of Kerala offer a unique experience of tranquility and scenic beauty, best enjoyed on a houseboat..."</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="https://lp-cms-production.imgix.net/image_browser/Querim_beach_Goa.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=23&dpr=4" alt="Goa">
+                <div class="description">
+                    <h3>Beach(Goa)</h3>
+                    <p style="font-style: oblique;">"Famous for its stunning beaches, vibrant nightlife, and Portuguese heritage, Goa is a popular destination for both relaxation and adventure..."</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="https://th.bing.com/th/id/OIP.M1UfaN-T5oCS2quqHQzSoQAAAA?rs=1&pid=ImgDetMain" alt="Golden Temple">
+                <div class="description">
+                    <h3>Golden Temple(Amritsar)</h3>
+                    <p style="font-style: oblique;">"Located in Amritsar, the Golden Temple is a spiritual site for Sikhs and is known for its stunning architecture and serene ambiance..."</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="https://www.worldatlas.com/r/w1200/upload/ff/49/57/shutterstock-1509720656.jpg" alt="Hampi">
+                <div class="description">
+                    <h3>Hampi(Karnataka)</h3>
+                    <p style="font-style: oblique;">"A UNESCO World Heritage Site, Hampi is known for its ancient temples, ruins, and stunning landscape, making it a must-visit for history enthusiasts..."</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="https://th.bing.com/th/id/OIP.nn6rgyQADRMCt5OiEqrQswHaE8?rs=1&pid=ImgDetMain" alt="Jaisalmer Fort">
+                <div class="description">
+                    <h3>Hawa Mahal(Jaipur)</h3>
+                    <p style="font-style: oblique;">"Known as the Pink City, Jaipur is famous for its historic palaces and forts, including the Hawa Mahal and Amber Fort. It offers a glimpse into India's royal past..."</p>
+                </div>
+            </div>
+        </section>
+
+        <aside class="tourism-assistant">
+            <button class="help-button" onclick="openAssistant()">Need Help?</button>
+        </aside>
+
+        <!-- Contact Us Form -->
+     
+        
+            <script src="script.js"></script>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h2>About Us</h2>
+            <p style="font-style: oblique;">Ansash Tourism aims to provide the best travel experiences, showcasing the beauty of India and its rich cultural heritage.</p>
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="contact">
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+   <script>
+    function openLogin() {
+    alert('Login functionality will be here.');
+}
+
+function openRegister() {
+    alert('Register functionality will be here.');
+}
+
+function openAssistant() {
+    alert('Tourism Assistant feature will be here.');
+}
+document.getElementById('openForm').onclick = function() {
+    document.getElementById('popup').style.display = 'block';
+}
+
+document.getElementById('closeForm').onclick = function() {
+    document.getElementById('popup').style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('popup')) {
+        document.getElementById('popup').style.display = 'none';
+    }
+}
+ </script>
+</body>
+</html>

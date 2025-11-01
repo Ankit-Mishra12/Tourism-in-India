@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism in Agra</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ab/77/f9/img-20190525-192344-01.jpg?w=1200&h=1200&s=1') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 119, 182, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.attractions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.check{
+    text-align: center;
+}
+
+.card {
+    background: rgba(121, 113, 113, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 50px;
+    margin-right: 30 px;
+    overflow: hidden;
+    height:500px;
+    width: 400px;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card p {
+    padding: 0 15px 15px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 119, 182, 0.8);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.total{
+    margin-left: 650px;
+    background-color:#00A2E1;
+}
+.total-bill{
+    margin-left:650px ;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Explore Agra With Us</h1>
+        <p style="font-style: oblique;">Your guide to the city of the Taj Mahal</p>
+        <p style="font-style: oblique;">Famous Places to Visit</p>
+    </header>
+    <main>
+        <section class="attractions">
+            <form id="tourForm">
+                <div class="card">
+                    <img src="https://images3.alphacoders.com/853/thumb-1920-853174.jpg" alt="Taj Mahal">
+                    <h3>Taj Mahal</h3>
+                    <p style="font-style: oblique;">The stunning white marble mausoleum built by Shah Jahan in memory of his wife Mumtaz Mahal.</p>
+                    <p>Price: ₹2000</p>
+                    <div style="text-align: center;">
+                        <input type="checkbox" name="attraction" value="2000" style="accent-color: rgb(122, 243, 122);"> Select
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/1169495248/photo/agra-fort-medieval-indian-fort-at-agra-india-at-sunrise.jpg?s=612x612&w=0&k=20&c=EI9BXzCutx2gRuPCFUDSirZg9Hfc7G_kGfFbmVBmSEc=" alt="Agra Fort">
+                    <h3>Agra Fort</h3>
+                    <p style="font-style: oblique;">A UNESCO World Heritage site, this massive fort is an excellent example of Mughal architecture.</p>
+                    <p>Price: ₹1500</p>
+                    <div style="text-align: center;">
+                        <input type="checkbox" name="attraction" value="1500" style="accent-color: rgb(122, 243, 122);"> Select
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.projectexpedition.com/photos/3704sightattraction2189389232_acb9c29e38_b_sized.jpg" alt="Itimad-ud-Daulah's Tomb">
+                    <h3>Itimad-ud-Daulah's Tomb</h3>
+                    <p style="font-style: oblique;">Also known as the Baby Taj, this beautiful tomb is made of white marble and intricate inlay work.</p>
+                    <p>Price: ₹1000</p>
+                    <div style="text-align: center;">
+                        <input type="checkbox" name="attraction" value="1000" style="accent-color: rgb(122, 243, 122);"> Select
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/01/56/38/00/1000_F_156380042_a5V9Vc5SMcSveC5cAtUGjibKLGJmeYi5.jpg" alt="Mariam-uz-Zamani Mosque">
+                    <h3>Mariam-uz-Zamani Mosque</h3>
+                    <p style="font-style: oblique;">This stunning mosque was built by Jahangir in memory of his wife Mariam-uz-Zamani.</p>
+                    <p>Price: ₹1200</p>
+                    <div style="text-align: center;">
+                        <input type="checkbox" name="attraction" value="1200" style="accent-color: rgb(122, 243, 122);"> Select
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://live.staticflickr.com/8629/16358451568_c866ebcae9_b.jpg" alt="Chini Ka Rauza">
+                    <h3>Chini Ka Rauza</h3>
+                    <p style="font-style: oblique;">A beautiful tomb known for its intricate tile work, it's a hidden gem in Agra.</p>
+                    <p>Price: ₹800</p>
+                    <div style="text-align: center;">
+                        <input type="checkbox" name="attraction" value="800" style="accent-color: rgb(122, 243, 122);"> Select
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.agrashivtourandtravels.com/wp-content/uploads/2020/06/jama.jpg" alt="Jama Masjid">
+                    <h3>Jama Masjid</h3>
+                    <p style="font-style: oblique;">A grand mosque built in the Mughal architectural style, offering stunning views of the Taj Mahal.</p>
+                    <p>Price: ₹500</p>
+                    <div style="text-align: center;">
+                        <input type="checkbox" name="attraction" value="500" style="accent-color: rgb(122, 243, 122);"> Select
+                    </div>
+                </div>
+                <div style="text-align: left; margin-top: 20px;">
+                    <button type="button" onclick="calculateTotal()" class="total" style="font-size: 20px; padding: 10px 20px;">Calculate Total</button>
+                </div>
+                <div id="totalBill" class="total-bill" style="margin-top: 20px; font-size: 18px; text-align: left;"></div>
+                <div style="text-align: center; margin-top: 18px;">
+                    <button type="submit" id="paymentButton" style="display:none; font-size: 22px; font-style: oblique; padding: 13px 26px; background-color: green; color: white;" class="total-bill">
+                        <a href="payment.html" style="text-decoration: none; color: white;">Proceed to Payment</a>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Explore Agra. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function calculateTotal() {
+            const checkboxes = document.querySelectorAll('input[name="attraction"]:checked');
+            let total = 0;
+            checkboxes.forEach((checkbox) => {
+                total += parseFloat(checkbox.value);
+            });
+    
+            const totalBill = document.getElementById('totalBill');
+            totalBill.innerHTML = `Total Bill: ₹${total}`;
+            totalBill.style.display = 'block';
+            totalBill.style.fontSize = '30px';
+            totalBill.style.color = 'black';
+            totalBill.style.fontWeight = 'bold';
+            totalBill.style.marginTop = '30px';
+            totalBill.style.transition = 'all 0.5s ease-in-out';
+            totalBill.style.opacity = '50';
+            setTimeout(() => {
+                totalBill.style.opacity = '1';
+            }, 100);
+    
+            const paymentButton = document.getElementById('paymentButton');
+            paymentButton.style.display = 'block';
+            paymentButton.style.transition = 'all 0.5s ease-in-out';
+            paymentButton.style.opacity = '10';
+            setTimeout(() => {
+                paymentButton.style.opacity = '1';
+            }, 100);
+        }
+    </script>
+</body>
+</html>
