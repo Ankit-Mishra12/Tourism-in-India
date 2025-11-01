@@ -34,16 +34,14 @@ Since this is a static website (frontend only), you can run it very easily.
 
 1.  **Download or Clone the Repository**
     ```bash
-    git clone [https://github.com/YOUR-USERNAME/tourism-in-india.git](https://github.com/YOUR-USERNAME/tourism-in-india.git)
+    git clone [https://github.com/YOUR-USERNAME/Tourism-in-India.git](https://github.com/YOUR-USERNAME/Tourism-in-India.git)
     ```
 2.  **Navigate to the Folder**
     ```bash
-    cd tourism-in-india
+    cd Tourism-in-India
     ```
 3.  **Open the Main File**
-    Open the **`home page.html`** file in your web browser.
-
-    *(**Pro-Tip:** If you rename `home page.html` to `index.html`, you can easily host this project for free on GitHub Pages!)*
+    Open the **`index.html`** file in your web browser.
 
 ## 📂 File Structure
 ├── home page.html # The main landing page with destination cards ├── login.html # User login form ├── reg.html # User registration form ├── location.html # "Plan a Trip" location input form ├── agra.html # Destination page for Agra with attractions ├── mumbai.html # Destination page for Mumbai with attractions ├── payment.html # Payment gateway simulation page └── lpc.html # "Last Page Confirmation" (Payment Successful)
