@@ -2,11 +2,12 @@
 
 This is an attractive, frontend-only website project for a "Tourism in India" travel service. It demonstrates a complete, simulated user journey—from browsing destinations and planning a trip to selecting attractions and completing a mock payment.
 
-*(**Pro-Tip:** Add a screenshot of your project's home page here to make it look even better!)*
+![Screenshot_1-11-2025_202813_127 0 0 1](https://github.com/user-attachments/assets/a5df5f24-6225-48e1-a96e-36f97373885d)
+
 
 ## ✨ Features
 
-* **Beautiful Home Page:** A main dashboard (`home page.html`) featuring a grid of famous Indian tourist destinations.
+* **Beautiful Home Page:** A main dashboard (`index.html`) featuring a grid of famous Indian tourist destinations.
 * **User Authentication Flow:** Separate, styled pages for user **Login** (`login.html`) and **Registration** (`reg.html`).
 * **Trip Planner:** A simple form (`location.html`) for users to input their starting location and desired destination.
 * **Destination Pages:** Detailed pages for specific cities (like `agra.html` and `mumbai.html`) where users can:
@@ -44,4 +45,4 @@ Since this is a static website (frontend only), you can run it very easily.
     Open the **`index.html`** file in your web browser.
 
 ## 📂 File Structure
-├── home page.html # The main landing page with destination cards ├── login.html # User login form ├── reg.html # User registration form ├── location.html # "Plan a Trip" location input form ├── agra.html # Destination page for Agra with attractions ├── mumbai.html # Destination page for Mumbai with attractions ├── payment.html # Payment gateway simulation page └── lpc.html # "Last Page Confirmation" (Payment Successful)
+├── index.html # The main landing page with destination cards ├── login.html # User login form ├── reg.html # User registration form ├── location.html # "Plan a Trip" location input form ├── agra.html # Destination page for Agra with attractions ├── mumbai.html # Destination page for Mumbai with attractions ├── payment.html # Payment gateway simulation page └── lpc.html # "Last Page Confirmation" (Payment Successful)
